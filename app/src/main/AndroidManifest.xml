@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Domoticon">
         <activity
+            android:name=".ThreeBulbsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TwoBulbsActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
