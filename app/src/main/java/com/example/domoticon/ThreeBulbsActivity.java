@@ -9,13 +9,15 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.domoticon.databinding.ActivityMainBinding;
+import com.example.domoticon.databinding.ActivityThreeBulbsBinding;
 
 public class ThreeBulbsActivity extends AppCompatActivity {
-    private ActivityMainBinding binding;
+    private ActivityThreeBulbsBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView((binding = ActivityMainBinding.inflate(getLayoutInflater())).getRoot());
+        setContentView((binding = ActivityThreeBulbsBinding.inflate(getLayoutInflater())).getRoot());
+        setContentView((binding = ActivityThreeBulbsBinding.inflate(getLayoutInflater())).getRoot());
     }
 }

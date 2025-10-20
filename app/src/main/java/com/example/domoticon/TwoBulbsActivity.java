@@ -9,14 +9,15 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.domoticon.databinding.ActivityMainBinding;
+import com.example.domoticon.databinding.ActivityTwoBulbsBinding;
 
 public class TwoBulbsActivity extends AppCompatActivity {
 
-    private ActivityMainBinding binding;
+    private ActivityTwoBulbsBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView((binding = ActivityMainBinding.inflate(getLayoutInflater())).getRoot());
+        setContentView((binding = ActivityTwoBulbsBinding.inflate(getLayoutInflater())).getRoot());
     }
 }

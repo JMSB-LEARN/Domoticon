@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="number_devices">Numero de dispositivos: </string>
+    <string name="cd_icon">Una bombilla encendida</string>
+    <string name="default_option_spinner">"¿Cuantos?"</string>
+</resources>
