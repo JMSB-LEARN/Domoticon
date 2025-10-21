@@ -3,4 +3,9 @@
     <string name="number_devices">Numero de dispositivos: </string>
     <string name="cd_icon">Una bombilla encendida</string>
     <string name="default_option_spinner">"¿Cuantos?"</string>
+    <string name="control_panel">Panel de control</string>
+    <string name="off">Apagado</string>
+    <string name="on">encendido</string>
+    <string name="cd_reset">Reiniciar</string>
+    <string name="lock">Bloquear</string>
 </resources>

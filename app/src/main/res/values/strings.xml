@@ -3,4 +3,9 @@
     <string name="cd_icon">A lit lightbulb</string>
     <string name="number_devices">Number of devices: </string>
     <string name="default_option_spinner">"How many?"</string>
+    <string name="control_panel">Control panel</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="cd_reset">Reset</string>
+    <string name="lock">Block</string>
 </resources>
