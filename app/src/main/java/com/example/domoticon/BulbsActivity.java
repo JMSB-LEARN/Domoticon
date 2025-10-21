@@ -32,11 +32,9 @@ public class BulbsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Get the bulb count from the Intent (default 3)
         bulbCount = getIntent().getIntExtra("bulbCount", 3);
 
         if (bulbCount == 2) {
-            // Two bulbs layout
             ActivityTwoBulbsBinding binding2 = ActivityTwoBulbsBinding.inflate(getLayoutInflater());
             setContentView(binding2.getRoot());
 
@@ -47,7 +45,7 @@ public class BulbsActivity extends AppCompatActivity {
             lockSC = binding2.bsLock;
 
         } else {
-            // Three bulbs layout
+
             ActivityThreeBulbsBinding binding3 = ActivityThreeBulbsBinding.inflate(getLayoutInflater());
             setContentView(binding3.getRoot());
 
@@ -58,7 +56,6 @@ public class BulbsActivity extends AppCompatActivity {
             lockSC = binding3.bsLock;
         }
 
-        // Restore state if activity is recreated
         if (savedInstanceState != null) {
             for (int i = 0; i < toggleButtons.length; i++) {
                 boolean isChecked = savedInstanceState.getBoolean(KEY_STATE_TOGGLE_BUTTON + i);
@@ -72,7 +69,6 @@ public class BulbsActivity extends AppCompatActivity {
             }
         }
 
-        // Toggle button listeners
         for (int i = 0; i < toggleButtons.length; i++) {
             int I = i;
             toggleButtons[i].setOnCheckedChangeListener((button, checkStatus) -> {
@@ -80,12 +76,10 @@ public class BulbsActivity extends AppCompatActivity {
             });
         }
 
-        // Reset button
         resetButton.setOnClickListener(v -> {
             if (!locked) switchState();
         });
 
-        // Lock switch
         lockSC.setOnCheckedChangeListener((button, state) -> setLockStatus(state));
     }
 
